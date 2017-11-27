@@ -16,8 +16,9 @@
         </ol>
     </div>
 </div>
-<!-- /.row -->
 
+@if($errors->any())
+<!-- /.row -->
 <div class="row">
     <div class="col-lg-12">
         <div class="alert alert-danger alert-dismissable">
@@ -27,6 +28,7 @@
     </div>
 </div>
 <!-- /.row -->
+@endif
 
 <div class="row">
     <div class="col-lg-12">
