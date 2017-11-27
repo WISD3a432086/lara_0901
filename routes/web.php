@@ -25,4 +25,6 @@ Route::group(['prefix' => 'admin'], function() {
 
     Route::post('posts',['as'=>'admin.posts.store','uses'=> 'AdminPostsController@store']);
 
+    Route::patch('posts/{id}', ['as' => 'admin.posts.update', 'uses' => 'AdminPostsController@update']);
+
 });
