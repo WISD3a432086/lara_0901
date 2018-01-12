@@ -30,3 +30,4 @@ Route::group(['prefix' => 'admin'], function() {
     Route::delete('posts/{id}', ['as' => 'admin.posts.destroy', 'uses' => 'AdminPostsController@destroy']);
 
 });
+
